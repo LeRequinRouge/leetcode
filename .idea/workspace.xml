@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea66a4ea-cce3-4918-b109-b59fdbec9696" name="Changes" comment="16. 3Sum closest: passed with average runtime + memory use.">
-      <change afterPath="$PROJECT_DIR$/mediums/phone_letter_combo.py" afterDir="false" />
+    <list default="true" id="ea66a4ea-cce3-4918-b109-b59fdbec9696" name="Changes" comment="17. phone letter combo -- lost my mind on this one. Ended up following someone else's solution.">
+      <change afterPath="$PROJECT_DIR$/mediums/four_sum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediums/phone_letter_combo.py" beforeDir="false" afterPath="$PROJECT_DIR$/mediums/phone_letter_combo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.four_sum.executor": "Run",
     "Python.integer_to_roman.executor": "Run",
     "Python.longest_palindromic_substring.executor": "Run",
     "Python.phone_letter_combo.executor": "Run",
@@ -70,7 +72,30 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.four_sum">
+    <configuration name="four_sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="leetCode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mediums" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mediums/four_sum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="phone_letter_combo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="leetCode" />
       <option name="ENV_FILES" value="" />
@@ -96,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.four_sum" />
         <item itemvalue="Python.phone_letter_combo" />
       </list>
     </recent_temporary>
@@ -122,7 +148,7 @@
       <workItem from="1727456652507" duration="16419000" />
       <workItem from="1727548746560" duration="21531000" />
       <workItem from="1727799349853" duration="6515000" />
-      <workItem from="1727806448594" duration="10838000" />
+      <workItem from="1727806448594" duration="15515000" />
     </task>
     <task id="LOCAL-00001" summary="5. Longest Palindromic Substring -- inefficient and hacky, but successful.">
       <option name="closed" value="true" />
@@ -196,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727805270696</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="17. phone letter combo -- lost my mind on this one. Ended up following someone else's solution.">
+      <option name="closed" value="true" />
+      <created>1727819177847</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727819177847</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +246,8 @@
     <MESSAGE value="15. 3Sum: Time limit exceeded. Brute force and conditional hell failure." />
     <MESSAGE value="15. 3Sum: Concise bruteforce method obtained from leetcode user: niits" />
     <MESSAGE value="16. 3Sum closest: passed with average runtime + memory use." />
-    <option name="LAST_COMMIT_MESSAGE" value="16. 3Sum closest: passed with average runtime + memory use." />
+    <MESSAGE value="17. phone letter combo -- lost my mind on this one. Ended up following someone else's solution." />
+    <option name="LAST_COMMIT_MESSAGE" value="17. phone letter combo -- lost my mind on this one. Ended up following someone else's solution." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leetCode$test.coverage" NAME="test Coverage Results" MODIFIED="1726950179059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -220,10 +255,11 @@
     <SUITE FILE_PATH="coverage/leetCode$zigzag_conversion.coverage" NAME="zigzag_conversion Coverage Results" MODIFIED="1726972081893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$integer_to_roman.coverage" NAME="integer_to_roman Coverage Results" MODIFIED="1727475796746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$three_sum.coverage" NAME="three_sum Coverage Results" MODIFIED="1727562535053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
-    <SUITE FILE_PATH="coverage/leetCode$phone_letter_combo.coverage" NAME="phone_letter_combo Coverage Results" MODIFIED="1727818651752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
+    <SUITE FILE_PATH="coverage/leetCode$phone_letter_combo.coverage" NAME="phone_letter_combo Coverage Results" MODIFIED="1727821677737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$longest_palindromic_substring.coverage" NAME="longest_palindromic_substring Coverage Results" MODIFIED="1726944897579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$water_container.coverage" NAME="water_container Coverage Results" MODIFIED="1727465091646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$string_to_integer.coverage" NAME="string_to_integer Coverage Results" MODIFIED="1727050289749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$three_sum_closest.coverage" NAME="three_sum_closest Coverage Results" MODIFIED="1727805091144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
+    <SUITE FILE_PATH="coverage/leetCode$four_sum.coverage" NAME="four_sum Coverage Results" MODIFIED="1727823661078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
   </component>
 </project>

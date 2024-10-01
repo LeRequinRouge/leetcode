@@ -31,5 +31,4 @@ def find_combo(digits):
     return combo_list
 
 
-if __name__ == '__main__':
-    print(find_combo(digit_str))
+print(find_combo(digit_str))
