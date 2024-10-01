@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea66a4ea-cce3-4918-b109-b59fdbec9696" name="Changes" comment="15. 3Sum: Time limit exceeded. Brute force and conditional hell failure.">
+    <list default="true" id="ea66a4ea-cce3-4918-b109-b59fdbec9696" name="Changes" comment="15. 3Sum: Concise bruteforce method obtained from leetcode user: niits">
+      <change afterPath="$PROJECT_DIR$/mediums/three_sum_closest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediums/three_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/mediums/three_sum.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,26 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.integer_to_roman.executor": "Run",
-    "Python.longest_palindromic_substring.executor": "Run",
-    "Python.reverse_integer.executor": "Run",
-    "Python.string_to_integer.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.three_sum.executor": "Run",
-    "Python.water_container.executor": "Run",
-    "Python.zigzag_conversion.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.integer_to_roman.executor&quot;: &quot;Run&quot;,
+    &quot;Python.longest_palindromic_substring.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reverse_integer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.string_to_integer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.three_sum.executor&quot;: &quot;Run&quot;,
+    &quot;Python.three_sum_closest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.water_container.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zigzag_conversion.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,7 +89,8 @@
       <workItem from="1726973202833" duration="2863000" />
       <workItem from="1727046185223" duration="2938000" />
       <workItem from="1727456652507" duration="16419000" />
-      <workItem from="1727548746560" duration="13276000" />
+      <workItem from="1727548746560" duration="21531000" />
+      <workItem from="1727799349853" duration="5664000" />
     </task>
     <task id="LOCAL-00001" summary="5. Longest Palindromic Substring -- inefficient and hacky, but successful.">
       <option name="closed" value="true" />
@@ -146,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727559127695</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="15. 3Sum: Concise bruteforce method obtained from leetcode user: niits">
+      <option name="closed" value="true" />
+      <created>1727562629505</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727562629505</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,16 +170,18 @@
     <MESSAGE value="11. Largest water container: Concise two-pointer solution obtained via leetcode user Niits after failed brute-force attempt." />
     <MESSAGE value="12. int to roman numeral: Passing conversion method utilizing a dictionary." />
     <MESSAGE value="15. 3Sum: Time limit exceeded. Brute force and conditional hell failure." />
-    <option name="LAST_COMMIT_MESSAGE" value="15. 3Sum: Time limit exceeded. Brute force and conditional hell failure." />
+    <MESSAGE value="15. 3Sum: Concise bruteforce method obtained from leetcode user: niits" />
+    <option name="LAST_COMMIT_MESSAGE" value="15. 3Sum: Concise bruteforce method obtained from leetcode user: niits" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leetCode$test.coverage" NAME="test Coverage Results" MODIFIED="1726950179059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetCode$reverse_integer.coverage" NAME="reverse_integer Coverage Results" MODIFIED="1726975074309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$zigzag_conversion.coverage" NAME="zigzag_conversion Coverage Results" MODIFIED="1726972081893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$integer_to_roman.coverage" NAME="integer_to_roman Coverage Results" MODIFIED="1727475796746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
-    <SUITE FILE_PATH="coverage/leetCode$three_sum.coverage" NAME="three_sum Coverage Results" MODIFIED="1727562247348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
+    <SUITE FILE_PATH="coverage/leetCode$three_sum.coverage" NAME="three_sum Coverage Results" MODIFIED="1727562535053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$longest_palindromic_substring.coverage" NAME="longest_palindromic_substring Coverage Results" MODIFIED="1726944897579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$water_container.coverage" NAME="water_container Coverage Results" MODIFIED="1727465091646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
     <SUITE FILE_PATH="coverage/leetCode$string_to_integer.coverage" NAME="string_to_integer Coverage Results" MODIFIED="1727050289749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
+    <SUITE FILE_PATH="coverage/leetCode$three_sum_closest.coverage" NAME="three_sum_closest Coverage Results" MODIFIED="1727804924128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mediums" />
   </component>
 </project>
